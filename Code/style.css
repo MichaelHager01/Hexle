@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --clr-background: #131414;
+    --clr-light: #fff;
+    --clr-dark: #000000;
+    --clr-blue: #20A3D0;
+    --clr-green: #44D5AB;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1rem;
+    --fs-body: 1rem;
+}
+
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+    color: var(--clr-light);
+    background-color: var(--clr-background);
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: var(--fw-reg);
+}
+
+
+.intro_welcome_title {
+    text-align: center;
+    padding: 2em 0 0.5em 0;
+    text-decoration: underline;
+    text-decoration-color: var(--clr-blue);
+}
+
+
+.intro_welcome_block {
+    text-align: center;
+}
+
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
